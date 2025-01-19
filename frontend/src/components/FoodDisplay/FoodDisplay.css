@@ -1,0 +1,62 @@
+.food-display {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+
+  .food-display h2 {
+    text-align: center; /* Centered heading */
+    margin-bottom: 20px; /* Space below heading */
+  }
+
+  .food-display-list {
+    display: grid; /* Grid layout for food items */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+  }
+
+  .pagination-container {
+    display: flex; /* Flexbox for pagination and items per page */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Space above pagination */
+  }
+
+  .pagination {
+    display: flex; /* Flexbox for pagination buttons */
+  }
+
+  .pagination-button {
+    margin: 0 5px; /* Space between buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  .pagination-button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed; /* Not allowed cursor */
+  }
+
+  .pagination-button.active {
+    background-color: #0056b3; /* Active button color */
+  }
+
+  .items-per-page {
+    display: flex; /* Flexbox for label and select */
+    align-items: center; /* Center items vertically */
+  }
+
+  .items-per-page label {
+    margin-right: 10px; /* Space between label and select */
+  }
+
+  .items-per-page select {
+    padding: 5px; /* Padding for select */
+    border-radius: 5px; /* Rounded corners for select */
+    border: 1px solid #ccc; /* Border for select */
+  }
